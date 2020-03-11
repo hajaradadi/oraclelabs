@@ -1,0 +1,2 @@
+openssl req -x509 -nodes -newkey rsa:2048 -keyout breakout.pem -out breakout.pem -days 365 -subj "/C=MA/ST=Casablanca/L=Casablanca/O=Oracle/OU=Oracle Labs/CN=hajar.adadi"
+openssl req -new -key breakout.pem -out breakout.csr -subj "/C=MA/ST=Casablanca/L=Casablanca/O=Oracle/OU=Oracle Labs/CN=hajar.adadi"
